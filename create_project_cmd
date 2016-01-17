@@ -1,1 +1,0 @@
-android create project --target 3 --name WebviewTestApp --path ./android-web-view-test --activity MainActivity --package ar.com.nckweb.webviewtest
