@@ -1,5 +1,7 @@
 # Android Webview Test
 
+Este es un proyecto de prueba para ver como poder realizar una aplicacion que contenga un WebView. La idea es poder montar una webapp sobre una app de android para poder servir localmente todo el contenido estatico pero mantener las request por ajax al servidor.
+
 ## Crear Projecto
 
 El proyecto se creo con el siguiente comando:
@@ -76,7 +78,7 @@ $ android update project -p . --target android-17 --subprojects
 $ ant debug
 $ adb devices
 $ adb install ./bin/MainActivity-debug.apk
-$ adb shell am start -n ar.com.nckweb.webviewtest.MainActivity
+$ adb shell am start -n ar.com.nckweb.webviewtest/ar.com.nckweb.webviewtest.MainActivity
 
 ```
 
