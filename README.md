@@ -2,6 +2,19 @@
 
 Este es un proyecto de prueba para ver como poder realizar una aplicacion que contenga un WebView. La idea es poder montar una webapp sobre una app de android para poder servir localmente todo el contenido estatico pero mantener las request por ajax al servidor.
 
+Utiliza informacion de las guais:
+
+* [Building Your First App](http://developer.android.com/intl/es/training/basics/firstapp/index.html)
+* [Managing Projects from the Command Line](http://developer.android.com/intl/es/tools/projects/projects-cmdline.html)
+* [Building Web Apps in WebView](http://developer.android.com/intl/es/guide/webapps/webview.html)
+* [android.webkit.WebView](http://developer.android.com/intl/es/reference/android/webkit/WebView.html)
+* [android.webkit.WebViewClient](http://developer.android.com/intl/es/reference/android/webkit/WebViewClient.html)
+* [android.webkitWebResourceResponse](http://developer.android.com/intl/es/reference/android/webkit/WebResourceResponse.html)
+* [Reading and Writing Log](http://developer.android.com/intl/es/tools/debugging/debugging-log.html)
+* [android.util.Log](http://developer.android.com/intl/es/reference/android/util/Log.html)
+* [Settings](http://developer.android.com/intl/es/guide/topics/ui/settings.html)
+* [Menu](http://developer.android.com/intl/es/guide/topics/ui/menus.html)
+
 ## Crear Projecto
 
 El proyecto se creo con el siguiente comando:
@@ -70,6 +83,10 @@ id: 4 or "Google Inc.:Google APIs:17"
 
 Se uso el id `3`, es decir un minimo de Android 4.2 (API level 17). Tambien se podria haber usado `android-17` en vez de la id para especificar dicho target
 
+## Assets
+
+Dentro de la carpeta `assets` se guardan todos los archivos estaticos que usara la aplicacion. Todo lo que este en esa carpeta sera incluido en el apk.
+
 ## Correr proyecto 
 
 
@@ -77,7 +94,7 @@ Se uso el id `3`, es decir un minimo de Android 4.2 (API level 17). Tambien se p
 $ android update project -p . --target android-17 --subprojects
 $ ant debug
 $ adb devices
-$ adb install ./bin/MainActivity-debug.apk
+$ adb install ./bin/WebviewTestApp-debug.apk
 $ adb shell am start -n ar.com.nckweb.webviewtest/ar.com.nckweb.webviewtest.MainActivity
 
 ```
